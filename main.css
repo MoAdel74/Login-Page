@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+.container {
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+h1 {
+  color: palegoldenrod;
+  font-size: 40px;
+}
+h2 {
+  margin-bottom: 0;
+  font-size: 35px;
+}
+a {
+  color: rgb(205, 137, 11);
+}
+.create {
+  margin-bottom: 15px;
+}
+.email,
+.name,
+.num,
+.pass {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+input {
+  padding: 20px;
+  border: 2px solid #a3a3a3;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+}
+.name {
+  flex-direction: row;
+}
+.name .fi input,
+.name .la input {
+  width: calc(100% - 45px);
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(205, 137, 11);
+  cursor: pointer;
+  margin: 10px 0;
+}
+.req span {
+  display: block;
+}
+.req,
+.agg {
+  width: 500px;
+}

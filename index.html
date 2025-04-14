@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h1>BOOK IT PACE</h1></div>
+      <div class="create">
+        <h2>Create an account</h2>
+        <span class="have">Already have an account? <a href="#">Login</a></span>
+      </div>
+      <form action="">
+        <div class="email">
+          <label for="mail">Email</label>
+          <input
+            type="email"
+            name=""
+            id="mail"
+            placeholder="Any.mail@gmail.com"
+            required
+          />
+        </div>
+        <div class="name">
+          <div class="fi">
+            <label for="fname">First Name</label>
+            <input type="text" name="" id="fname" placeholder="First Name" required/>
+          </div>
+          <div class="la">
+            <label for="lname">Last Name</label>
+            <input type="text" name="" id="lname" placeholder="Last Name" required/>
+          </div>
+        </div>
+        <div class="num">
+          <label for="um">Phone Number</label>
+          <input type="number" name="" id="nu" placeholder="Phone Number" required/>
+        </div>
+        <div class="pass">
+          <label for="pass">Password</label>
+          <input type="password" name="" id="pass" placeholder="Password" minlength="8" maxlength="25" required/>
+        </div>
+        <div class="req">
+          <span class="reqOne"
+            ><i></i> At Least 8
+            Characters</span
+          >
+          <span class="reqTwo"
+            ><i></i> At Least One
+            Number (0-9)</span
+          >
+          <span class="reqThree"
+            ><i></i> At Least One
+            Uppercase Letter</span
+          >
+        </div>
+        <button type="submit">Join Us</button>
+        <span class="agg">
+          By clicking Join Us, you agree to our
+          <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+          <br />
+          You also agree to receive marketing emails from us and can opt out at
+          any time.
+        </span>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
