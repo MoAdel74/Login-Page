@@ -2,16 +2,19 @@ body {
   background-color: black;
   color: white;
   font-size: 20px;
+  background-image: url("freepik__expand__90310.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   min-width: 300px;
-  max-width: 500px;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 h1 {
-  color: palegoldenrod;
+  color: rgb(85, 84, 77);
   font-size: 40px;
 }
 h2 {
@@ -49,7 +52,8 @@ input {
 }
 button {
   display: block;
-  width: 100%;
+  width: 500px;
+  max-width: 100%;
   padding: 10px;
   border: none;
   border-radius: 30px;
@@ -63,4 +67,55 @@ button {
 .req,
 .agg {
   width: 500px;
+  max-width: 100%;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 100%;
+  }
+  .email,
+  .name,
+  .num,
+  .pass {
+    width: 100%;
+  }
+  button {
+    margin: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .name {
+    display: block;
+  }
+  .req {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .agg {
+    text-align: center;
+  }
+  .req,
+  .agg {
+    max-width: 100%;
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h2,
+  .have {
+    margin-top: 0;
+    text-align: center;
+    display: block;
+  }
+  label,
+  .fi,
+  .la {
+    text-align: center;
+  }
 }
